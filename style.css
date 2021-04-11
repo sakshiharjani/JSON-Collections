@@ -2,20 +2,16 @@ html, body {
   margin: 0px;
   padding: 0px;
   font-family: century-gothic, sans-serif;
-}
-
-#mainContainer {
-  /* margin: 0px;
-  padding: 0px; */
   background-color: #E0FFFF;
 }
+
 
 #header {
   font-weight: 700;
   color: black;
   font-size: 5vw;
   margin: 0px 0px 0px 38%;
-  text-shadow: 2px 2px 1px grey;
+  
 }
 
 #outputElement {
@@ -45,6 +41,7 @@ html, body {
   align-self: center;
   flex-direction: column;
   margin-bottom: 20px;
+  box-shadow: 5px 5px 5px grey;
 }
 
 #DIV {
@@ -56,16 +53,22 @@ html, body {
 }
 
 .contentTitle {
-  /* padding-top: 10px; */
-  margin-bottom: 0px;
+  position: static;
+
+  margin-bottom: 25px;
   margin-left: 3vw;
   font-size: 5vw;
   /* display: block; */
   /* color: #483D8B; */
 }
 
+H3 {
+  margin-top: 20px;
+}
+
+
 H4 {
-  line-height: 10px;
+  line-height: 1vw;
   margin-top: 0px;
   /* margin-bottom: 2vw; */
   margin-left: 17vw;
@@ -76,7 +79,7 @@ H4 {
 }
 
 .year {
-  color: #a82e7b;
+  color: #E0FFFF;
 }
 
 .albumImage {

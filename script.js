@@ -22,7 +22,8 @@ let jsonDatabase = [
     "picture_url" : "chillOne.jpg",
     "color" : "#e56572",
     "boxShadow" : "3px 3px 3px #483D8B",
-    "genreColor" : "#483D8B"
+    "genreColor" : "#483D8B",
+      "website" : "https://open.spotify.com/album/2B87zXm9bOWvAJdkJBTpzF"
   },
   {
     "genre" : "sad",
@@ -32,24 +33,59 @@ let jsonDatabase = [
     "picture_url" : "sadOne.jpg",
     "color" : "#a1b8c0",
     "boxShadow" : "3px 3px 3px #6e725b",
-    "genreColor" : "#6e725b"
-
+    "genreColor" : "#6e725b",
+      "website" : "https://open.spotify.com/album/2B87zXm9bOWvAJdkJBTpzF"
   },
   {
     "genre" : "mood booster",
     "name" : "Map of the Soul : 7",
     "artist" : "BTS",
     "dateReleased" : 2020,
-    "picture_url" : "sadOne.jpg",
-    "color" : "#a1b8c0",
-    "boxShadow" : "3px 3px 3px #6e725b",
-    "genreColor" : "#6e725b"
-
+    "picture_url" : "moodBooster.jpg",
+    "color" : "#505bb5",
+    "boxShadow" : "3px 3px 3px #f3d658",
+    "genreColor" : "#f3d658",
+      "website" : "https://open.spotify.com/album/2B87zXm9bOWvAJdkJBTpzF"
+  },
+  {
+    "genre" : "love",
+    "name" : "Lover",
+    "artist" : "Taylor Swift",
+    "dateReleased" : 2019,
+    "picture_url" : "loveOne.png",
+    "color" : "#ffbcbe",
+    "boxShadow" : "3px 3px 3px #c54f7e",
+    "genreColor" : "#c54f7e",
+      "website" : "https://open.spotify.com/album/2B87zXm9bOWvAJdkJBTpzF"
+  },
+  {
+    "genre" : "empowered",
+    "name" : "Ungodly Hour",
+    "artist" : "Chloe x Halle",
+    "dateReleased" : 2020,
+    "picture_url" : "empoweredOne.jpg",
+    "color" : "#797979",
+    "boxShadow" : "3px 3px 3px #c99462",
+    "genreColor" : "#c99462",
+      "website" : "https://open.spotify.com/album/2B87zXm9bOWvAJdkJBTpzF"
+  },
+  {
+    "genre" : "reflective",
+    "name" : "Melodrama",
+    "artist" : "Lorde",
+    "dateReleased" : 2017,
+    "picture_url" : "reflectiveOne.png",
+    "color" : "#b6bad8",
+    "boxShadow" : "3px 3px 3px #135ecf",
+    "genreColor" : "#135ecf",
+    "website" : "https://open.spotify.com/album/2B87zXm9bOWvAJdkJBTpzF"
   }
 ]
 
   for (var i = 0; i < jsonDatabase.length; i++) {
     createElementProper(jsonDatabase[i]);
+
+
   }
 
   function createElementProper(incomingJSON) {
@@ -81,6 +117,8 @@ let jsonDatabase = [
     albumArt.src = incomingJSON['picture_url'];
     albumArt.style.boxShadow = incomingJSON["boxShadow"];
     newContentElement.appendChild(albumArt);
+
+  
 
 
     outputGrid.appendChild(newContentElement);
