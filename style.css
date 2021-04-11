@@ -1,0 +1,71 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#mainContainer {
+  /* margin: 0px;
+  padding: 0px; */
+  background-color: #E0FFFF;
+}
+
+#header {
+  color: black;
+  font-size: 5vw;
+  margin: 0px 0px 0px 38%;
+  text-shadow: 2px 2px 1px grey;
+}
+
+#outputElement {
+  color: black;
+  font-size: 2vw;
+  margin: 0px 0px 0px 44%;
+
+}
+
+#outputGrid {
+  display: inline-block;
+
+}
+
+
+.background {
+  /* margin-left: 50px; */
+  width: 80vw;
+  height: 25vw;
+  border-style: groove;
+  border-color: black;
+}
+
+#DIV {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+
+
+
+}
+
+.contentTitle {
+  padding-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 7vw;
+  font-size: 5vw;
+  display: block;
+  color: #483D8B;
+}
+
+H4 {
+  margin-top: 0px;
+  margin-bottom: 2vw;
+  margin-left: 20vw;
+  font-size: 2vw;
+}
+
+.albumImage {
+  position: absolute;
+  margin-top: -22vw;
+  margin-left: 50%;
+  width: 20vw;
+  height: 20vw;
+  box-shadow: 3px 3px 3px #483D8B;
+}
