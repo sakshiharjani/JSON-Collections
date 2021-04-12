@@ -11,10 +11,10 @@ html, body {
   color: black;
   font-size: 5vw;
   margin: 0px 0px 0px 38%;
-  
+
 }
 
-#outputElement {
+#subHeader {
   font-weight: 400;
   font-style: italic;
   color: black;
@@ -52,7 +52,7 @@ html, body {
 
 }
 
-.contentTitle {
+.genre {
   position: static;
 
   margin-bottom: 25px;
@@ -60,6 +60,11 @@ html, body {
   font-size: 5vw;
   /* display: block; */
   /* color: #483D8B; */
+}
+
+.nameOfWork {
+  width: 390px;
+  line-height: 20px;
 }
 
 H3 {
@@ -86,7 +91,7 @@ H4 {
   position: absolute;
   justify-content: center;
   margin-top: 3%;
-  margin-left: 50%;
+  margin-left: 55%;
   width: 20vw;
   height: 20vw;
   /* box-shadow: 3px 3px 3px #483D8B; */
