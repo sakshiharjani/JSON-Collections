@@ -122,7 +122,7 @@ let jsonDatabase = [
 
     for (var i = 0; i < incomingJSON['features'].length; i++) {
       var songList = incomingJSON['features'][i];
-      var newSong = document.createElement("LI");
+      var newSong = document.createElement("DIV");
       newSong.innerHTML = songList;
       newSong.style.color = incomingJSON["genreColor"];
       features.appendChild(newSong);
