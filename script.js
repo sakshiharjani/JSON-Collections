@@ -12,7 +12,8 @@ let jsonDatabase = [
     "picture_url" : "chillOne.jpg",
     "color" : "#e56572",
     "boxShadow" : "3px 3px 3px #483D8B",
-    "genreColor" : "#483D8B"
+    "genreColor" : "#483D8B",
+    "features" : ["9pm in vancouver", "1am in nyc", "4am in seoul"]
   },
   {
     "genre" : "sad",
@@ -22,7 +23,8 @@ let jsonDatabase = [
     "picture_url" : "sadOne.jpg",
     "color" : "#a1b8c0",
     "boxShadow" : "3px 3px 3px #6e725b",
-    "genreColor" : "#6e725b"
+    "genreColor" : "#6e725b",
+    "features" : ["Smoke Signals", "Motion Sickness", "Would You Rather"]
   },
   {
     "genre" : "mood booster",
@@ -32,7 +34,8 @@ let jsonDatabase = [
     "picture_url" : "moodBooster.jpg",
     "color" : "#505bb5",
     "boxShadow" : "3px 3px 3px #f3d658",
-    "genreColor" : "#f3d658"
+    "genreColor" : "#f3d658",
+    "features" : ["Boy With Luv (ft. Halsey)", "Black Swan", "ON"]
   },
   {
     "genre" : "love",
@@ -42,7 +45,8 @@ let jsonDatabase = [
     "picture_url" : "loveOne.png",
     "color" : "#ffbcbe",
     "boxShadow" : "3px 3px 3px #c54f7e",
-    "genreColor" : "#c54f7e"
+    "genreColor" : "#c54f7e",
+    "features" : ["Cruel Summer", "Lover", "Daylight"]
   },
   {
     "genre" : "empowered",
@@ -52,7 +56,8 @@ let jsonDatabase = [
     "picture_url" : "empoweredOne.jpg",
     "color" : "#797979",
     "boxShadow" : "3px 3px 3px #c99462",
-    "genreColor" : "#c99462"
+    "genreColor" : "#c99462",
+    "features" : ["Baby Girl", "Ungodly Hour", "Lonely"]
   },
   {
     "genre" : "reflective",
@@ -62,7 +67,8 @@ let jsonDatabase = [
     "picture_url" : "reflectiveOne.png",
     "color" : "#b6bad8",
     "boxShadow" : "3px 3px 3px #135ecf",
-    "genreColor" : "#135ecf"
+    "genreColor" : "#135ecf",
+    "features" : ["Green Light", "The Lourve", "Liability"]
   },
   {
     "genre" : "upbeat",
@@ -72,7 +78,8 @@ let jsonDatabase = [
     "picture_url" : "upbeatOne.jpg",
     "color" : "#d61c34",
     "boxShadow" : "3px 3px 3px #031d98",
-    "genreColor" : "#031d98"
+    "genreColor" : "#031d98",
+    "features" : ["Sunflower", "Way Up", "Elevate"]
   },
 ]
 
@@ -105,6 +112,21 @@ let jsonDatabase = [
     year.classList.add('year');
     year.innerHTML = incomingJSON["dateReleased"];
     newContentElement.appendChild(year);
+
+    let featuresHeader = document.createElement("H5");
+    featuresHeader.innerHTML = "features:";
+    newContentElement.appendChild(featuresHeader);
+
+    let features = document.createElement("UL");
+    newContentElement.appendChild(features);
+
+    for (var i = 0; i < incomingJSON['features'].length; i++) {
+      var songList = incomingJSON['features'][i];
+      var newSong = document.createElement("LI");
+      newSong.innerHTML = songList;
+      newSong.style.color = incomingJSON["genreColor"];
+      features.appendChild(newSong);
+    }
 
     let albumArt = document.createElement("IMG");
     albumArt.classList.add("albumImage");

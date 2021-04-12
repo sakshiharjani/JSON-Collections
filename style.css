@@ -70,7 +70,7 @@ H4 {
   /* line-height: 1vw; */
   margin-top: 0px;
   /* margin-bottom: 2vw; */
-  margin-left: 10vw;
+  margin-left: 7vw;
   font-size: 2vw;
   /* display: flex;
   flex-direction: column;
@@ -79,6 +79,27 @@ H4 {
 
 .year {
   color: #E0FFFF;
+}
+
+H5, UL {
+  margin-top: 16vw;
+  /* margin-bottom: 0px; */
+  position: absolute;
+}
+
+H5 {
+  margin-left: 34vw;
+  font-style: oblique;
+  font-size: 2vw;
+  text-decoration: underline;
+}
+
+UL {
+  padding-top: 3vw;
+  margin-left: 34vw;
+  font-size: 1vw;
+  font-weight: bolder;
+
 }
 
 .albumImage {
