@@ -66,7 +66,7 @@ let jsonDatabase = [
   },
   {
     "genre" : "upbeat",
-    "name" : "Spider-Man: Into the Spider-verse (Soundtrack From & Inspired by the Motion Picture)",
+    "name" : "Spider-Man: Into the Spider-verse",
     "artist" : "Various Artists",
     "dateReleased" : 2018,
     "picture_url" : "upbeatOne.jpg",

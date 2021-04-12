@@ -44,13 +44,6 @@ html, body {
   box-shadow: 5px 5px 5px grey;
 }
 
-#DIV {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-
-
-
-}
 
 .genre {
   position: static;
@@ -63,20 +56,21 @@ html, body {
 }
 
 .nameOfWork {
-  width: 390px;
-  line-height: 20px;
+  /* width: 390px; */
+  margin-right: 0px;
+  /* line-height: 24px; */
 }
 
 H3 {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 
 H4 {
-  line-height: 1vw;
+  /* line-height: 1vw; */
   margin-top: 0px;
   /* margin-bottom: 2vw; */
-  margin-left: 17vw;
+  margin-left: 10vw;
   font-size: 2vw;
   /* display: flex;
   flex-direction: column;
